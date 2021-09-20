@@ -1,4 +1,4 @@
-# This file is read automatically by the Component Catalog
+# This file is read automatically by Kronicle https://kronicle.tech
 
 
 # An area is a grouping of 1 or more teams. Currently each team can only belong to 1 area, though this may change in the future.
@@ -11,10 +11,10 @@ areas:
   - id: example-area
     name: Example Area
     description: |
-      The `description` should be a short description of the area that is 1 to 3 sentences long. It frequently used in the Component Catalog to describe the
+      The `description` should be a short description of the area that is 1 to 3 sentences long. It frequently used in Kronicle to describe the
       area.
     notes: |
-      The `notes` field can include more detailed information for the area. The notes are not shown in as many places in the Component Catalog as the
+      The `notes` field can include more detailed information for the area. The notes are not shown in as many places in Kronicle as the
       description.
 
       The notes field also supports [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
@@ -52,7 +52,7 @@ teams:
     areaId: energy
     emailAddress: Example@example.com
     description: |
-      The `description` should be a short description of the team that is 1 to 3 sentences long. It frequently used in the Component Catalog to describe the
+      The `description` should be a short description of the team that is 1 to 3 sentences long. It frequently used in Kronicle to describe the
       team.
       
       The description often contains the name and email address of the team's tech lead. E.g. [Example](mailto:Example@example.com) 
@@ -60,7 +60,7 @@ teams:
       [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/) is supported in the description, so bullet point lists, hyperlinks and
       tables can be used.
     notes: |
-      The `notes` field can include more detailed information for the team. The notes are not shown in as many places in the Component Catalog as the
+      The `notes` field can include more detailed information for the team. The notes are not shown in as many places in Kronicle as the
       description.
       
       The notes field also supports [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
@@ -93,14 +93,14 @@ teams:
 # A component is any part of a technology stack/platform.  A component could a web frontend, mobile app, microservice, database server, database, queue
 # server, queue, content delivery network (CDN), load balancer etc.
 components:
-  # Example of the minimal YAML to add a component to the Component Catalog
+  # Example of the minimal YAML to add a component to Kronicle
   - id: example-component
     name: Example Component
     type: service
     repo:
       url: https://example.com/example.git
     description: |
-      A short description of the component that is 1 to 3 sentences long. It frequently used in the Component Catalog to describe
+      A short description of the component that is 1 to 3 sentences long. It frequently used in Kronicle to describe
       the component.
     teams:
       - teamId: example-team
@@ -110,9 +110,9 @@ components:
   # Example of all the YAML that can be used on a component
   - id: example-detailed-component
     name: Example Detailed Component
-    # The component catalog supports custom component types
+    # Kronicle supports custom component types
     type: service
-    # Tags are used in the Component Catalog to group together components. They can be used in the Component Catalog to view dependencies, tech debt etc. for
+    # Tags are used in Kronicle to group together components. They can be used in Kronicle to view dependencies, tech debt etc. for
     # tagged groups of components.
     #
     # Tags have to be in kebab-case.
@@ -137,13 +137,13 @@ components:
       - description: |
           Description of another responsibility.
     description: |
-      The `description` should be a short description of the component that is 1 to 3 sentences long. It frequently used in the Component Catalog to describe
+      The `description` should be a short description of the component that is 1 to 3 sentences long. It frequently used in Kronicle to describe
       the component.
 
       [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/) is supported in the description, so bullet point lists, hyperlinks and
       tables can be used.
     notes: |
-      The `notes` field can include more detailed information for the component. The notes are not shown in as many places in the Component Catalog as the
+      The `notes` field can include more detailed information for the component. The notes are not shown in as many places in Kronicle as the
       description.
 
       The notes field also supports [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
@@ -195,7 +195,7 @@ components:
       - teamId: example-team-3
         description: |
           Another team that has no `type` specified.
-    # The component catalog supports custom platforms
+    # Kronicle supports custom platforms
     platform: kubernetes
     # The `dependencies` section is optional. It describes dependencies between this component and other components. It can be used to describe things like:
     #
@@ -278,7 +278,7 @@ components:
         priority: medium
     # The `openApiSpecs` section is optional. It can be used to provide the URLs of OpenAPI spec JSON/YAML files for the component.
     #
-    # As well as specifying OpenAPI spec URLs here, the Component Catalog can also automatically detect OpenAPI spec JSON/YAML files that are committed to the
+    # As well as specifying OpenAPI spec URLs here, Kronicle can also automatically detect OpenAPI spec JSON/YAML files that are committed to the
     # component's code repo.
     openApiSpecs:
       - url: http://example.com/example/dev/openapi.yaml
