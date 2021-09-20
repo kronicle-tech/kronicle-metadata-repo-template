@@ -49,7 +49,7 @@ teams:
   - id: example-team
     name: Example Team
     # areaId is optional. If specified, it makes the team part of the referenced area
-    areaId: energy
+    areaId: example-area
     emailAddress: Example@example.com
     description: |
       The `description` should be a short description of the team that is 1 to 3 sentences long. It frequently used in Kronicle to describe the
