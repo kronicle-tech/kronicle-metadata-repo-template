@@ -1,10 +1,10 @@
-# Example Component Metadata
+# Example Kronicle Metadata
 
-The [component-metadata.yaml](component-metadata.yaml) defines components, teams and areas in the Example space.
+The [kronicle.yaml](kronicle.yaml) defines components, teams and areas in the Example space.
 
-## Confirming the contents of the `component-metadata.yaml` file is valid after making a change
+## Confirming the contents of the `kronicle.yaml` file is valid after making a change
 
-You can run the following command to validate the contents of the `component-metadata.yaml` file:
+You can run the following command to validate the contents of the `kronicle.yaml` file:
 
 ```shell
 $ ./gradlew build
@@ -13,25 +13,25 @@ $ ./gradlew build
 The following command can also be used:
 
 ```shell
-$ ./gradlew validateComponentMetadata
+$ ./gradlew validateKronicleMetadata
 ```
 
-## Releasing changes to `component-metadata.yaml` file
+## Releasing changes to `kronicle.yaml` file
 
-There is no need to release changes to the [component-metadata.yaml](component-metadata.yaml) file in this repo.
-When changes to the [component-metadata.yaml](component-metadata.yaml) file are merged to the main branch,
-those changes will automatically become visible in the Component Catalog within the next 15 to 30 minutes, as
-part of the automated refreshes of the Component Catalog.  Refreshes start every 15 minutes but take 10
+There is no need to release changes to the [kronicle.yaml](kronicle.yaml) file in this repo.
+When changes to the [kronicle.yaml](kronicle.yaml) file are merged to the main branch,
+those changes will automatically become visible in Kronicle within the next 15 to 30 minutes, as
+part of the automated refreshes of Kronicle.  Refreshes start every 15 minutes but take 10
 to 30 minutes to complete.
 
 ## Example YAML for areas, teams and components
 
-See the https://github.com/moneysupermarket/component-metadata-repo-template/blob/main/component-metadata.yaml
+See the https://github.com/kronicle-tech/kronicle-metadata-repo-template/blob/main/kronicle.yaml
 file for example YAML for areas, teams and components.
 
-## Updating the dependency on the `com.moneysupermarket.componentcatalog:component-catalog-component-metadata` library
+## Updating the dependency on the `tech.kronicle:metadata` library
 
-From time to time, the Component Catalog will make changes to the objects and fields that are supported in
-`component-metadata.yaml` files. When this happens, you can bring in support for those changes to this repo by 
-updating the version of the `componentMetadataVersion` setting in the [gradle.properties](gradle.properties)
+From time to time, Kronicle will make changes to the objects and fields that are supported in
+`kronicle.yaml` files. When this happens, you can bring in support for those changes to this repo by 
+updating the version of the `kronicleVersion` setting in the [gradle.properties](gradle.properties)
 file in this repo.
